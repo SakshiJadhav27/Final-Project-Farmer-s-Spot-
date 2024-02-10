@@ -34,13 +34,11 @@ const FarmerRegistration = () => {
   return (
     <div className="registration-container">
       <div className="side-image">
-        {/* Add your side image here */}
         <img src={farmer3} alt="Side Image" />
       </div>
       <div className="registration-form">
         <h2>Farmer Registration</h2>
         <form onSubmit={handleSubmit}>
-          {/* Add your registration form fields here */}
           <label htmlFor="firstName">Full Name:</label>
           <input 
           type="text" 
@@ -54,7 +52,7 @@ const FarmerRegistration = () => {
          />
          {errors.fullName && touched.fullName ? (<p className="form-error">{errors.fullName}</p>):null}
 
-          <label htmlFor="lastName">Government Id:</label>
+          <label htmlFor="GovernId">Government Id:</label>
           <input 
           type="text" 
           id="Governid" 
